@@ -55,11 +55,11 @@ def try_import_embedder():
 def main(args):
     start_time = time.time()
 
-    clean_csv = Path(args.clean_csv)
-    cache_dir = Path(args.cache_dir)
-    cache_path = cache_dir / args.emb_cache
-    ids_path = cache_dir / args.ids_cache
-    
+    clean_csv = Path("C:/Users/Owner/depression-prediction/data/reddit_depression_small.csv")
+    cache_dir = Path("C:/Users/Owner/depression-prediction/data/cache")
+    cache_path = cache_dir / "embeddings_minilm_small.pkl"
+    ids_path = cache_dir / "ids_minilm_small.pkl"
+
     if not clean_csv.exists():
         logger.error(f"Cleaned CSV file not found at: {clean_csv}")
         sys.exit(1)
