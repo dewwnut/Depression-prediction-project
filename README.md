@@ -50,6 +50,7 @@ depression-prediction/
 │ ├── embedder.py
 │ ├── train_baseline.py
 │ ├── train_minilm.py
+│ ├── eval_baseline.py
 │ ├── eval_minilm.py
 │ ├── eval_threshold.py
 │ ├── liwc_like_features.py
@@ -143,7 +144,7 @@ It must **never** replace professional assessment or therapy.
 
 - **Dataset:** [Reddit Depression Dataset (Kaggle)](https://www.kaggle.com/datasets)  
 - **Inspired by:** Academic research on NLP and mental health  
-- **Author:** [Nada Badran](https://github.com/NadaBadran)
+- **Author:** [Nada Badran](https://github.com/dewwnut)
 
 ---
 
@@ -173,7 +174,7 @@ Follow these steps to set up the project on your local machine.
 ### 1 Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/depression-prediction.git
+git clone https://github.com/dewwnut/depression-prediction.git
 cd depression-prediction
 ```
 
@@ -206,7 +207,7 @@ python src/train_baseline.py
 To evaluate its performance:
 
 ```bash
-python src/eval_threshold.py
+python src/eval_baseline.py
 ```
 ### 5 Run the MiniLM Model (Semantic Embeddings + Random Forest)
 
