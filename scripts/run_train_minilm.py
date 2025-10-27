@@ -50,7 +50,7 @@ def main(args):
 
     emb = load_embeddings(emb_cache)
     if emb is None or args.recompute:
-        # call the embed script programmatically
+        
         logger.info("Embeddings missing or recompute requested — invoking run_embed_minilm script")
         import subprocess
         import sys as _sys

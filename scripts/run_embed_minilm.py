@@ -11,7 +11,7 @@ import pandas as pd
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s %(levelname)s %(name)s: %(message)s",
-    handlers=[logging.StreamHandler()]  # add FileHandler(...) to log to file
+    handlers=[logging.StreamHandler()]  
 )
 
 logger = logging.getLogger("run_embed_minilm")
@@ -42,7 +42,6 @@ def try_import_embedder():
                 self.model = SentenceTransformer(model_name, device=device)
             
             def encode(self, texts, show_progress=True):
-                # SentenceTransformer encode handles batching internally but we batch here explicitly
                 embeddings = []
                 for i in range(0, len(texts), self.batch_size):
                     batch = texts[i:i+self.batch_size]
@@ -73,7 +72,7 @@ def main(args):
         
     body = df['body'].astype(str).tolist()
     
-    # If embeddings already exist and --force is not set, load and exit
+    
     if cache_path.exists() and not args.force:
        logger.info(f"Embeddings cache already exists at {cache_path}. Use --force to recompute.")
        return
@@ -85,7 +84,6 @@ def main(args):
         logger.info(f"Encoding {len(body)} texts with model {args.model_name} (device={args.device}, batch_size={args.batch_size})")
         emb = embedder.encode(body, show_progress=True) if 'show_progress' in embedder.encode.__code__.co_varnames else embedder.encode(body)
     except TypeError:
-        # fallback if encode signature differs
         emb = embedder.encode(body)
 
     logger.info(f"Embeddings computed. shape={emb.shape}")
