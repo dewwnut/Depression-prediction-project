@@ -138,15 +138,6 @@ All data was publicly available and anonymized.
 It must **never** replace professional assessment or therapy.  
 
 
----
-
-##  Acknowledgments
-
-- **Dataset:** [Reddit Depression Dataset (Kaggle)](https://www.kaggle.com/datasets)  
-- **Inspired by:** Academic research on NLP and mental health  
-- **Author:** [Nada Badran](https://github.com/dewwnut)
-
----
 
 ##  Example Use
 
@@ -261,3 +252,12 @@ Use a smaller subset of the data via create_small_dataset.py
 Run on CPU only (default; no GPU required)
 
 Close other applications to free memory during embedding generation
+
+
+##  Acknowledgments
+
+- **Dataset:** [Reddit Depression Dataset (Kaggle)](https://www.kaggle.com/datasets)  
+- **Inspired by:** Academic research on NLP and mental health  
+- **Author:** [Nada Badran](https://github.com/dewwnut)
+
+---
