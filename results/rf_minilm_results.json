@@ -1,0 +1,8 @@
+{
+  "model_path": "models\\rf_minilm.pkl",
+  "embeddings_path": "C:\\Users\\Owner\\depression-prediction\\data\\cache\\embeddings_minilm_small.pkl",
+  "labels_path": "data\\labels.npy",
+  "n_train": 8000,
+  "n_test": 2000,
+  "class_distribution_train": {
+    "0.0": 
