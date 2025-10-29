@@ -261,6 +261,6 @@ Close other applications to free memory during embedding generation
 - **Author:** [Nada Badran](https://github.com/dewwnut)
 
 ---
-=======
+
 
 
