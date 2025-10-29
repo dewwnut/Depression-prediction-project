@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #  Detecting Linguistic Markers of Depression Using NLP
 
 A **Natural Language Processing (NLP)** project that predicts potential signs of **depression** from written text using **Machine Learning**.  
@@ -261,3 +262,6 @@ Close other applications to free memory during embedding generation
 - **Author:** [Nada Badran](https://github.com/dewwnut)
 
 ---
+=======
+
+>>>>>>> 52b74d484630b2b8b849c61bd453a9cadd580d88
