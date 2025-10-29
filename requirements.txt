@@ -22,12 +22,13 @@ seaborn==0.13.2
 six==1.17.0
 threadpoolctl==3.6.0
 tqdm==4.67.1
-tzdata==2025.2
+tzdata>=2023.3
 sentence-transformers
 scikit-learn==1.7.2
 joblib==1.5.2
 pandas==2.3.3
 tqdm==4.67.1
 matplotlib==3.10.7
+
 
 
